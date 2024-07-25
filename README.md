@@ -8,13 +8,13 @@ This is a Full stack job App made with MERN Stack, MUI, Datagrid, cookie, etc. I
 ## Screenshots
 
 ### Homepage
-![Homepage](public/home.png)
+![Homepage](screenshots/home.png)
 
 ### Admin Dashboard
-![Job Listings](public/adminDashboard.png)
+![Admin Dashboard](screenshots/adminDashboard.png)
 
 ### User Dashboard
-![Job Details](public/userDashboard.png)
+![User Dashboard](screenshots/userDashboard.png)
 
 ## Features
 
@@ -90,14 +90,7 @@ This is a Full stack job App made with MERN Stack, MUI, Datagrid, cookie, etc. I
     cd ../frontend
     npm install
     ```
-
-2. Create a `.env` file in the `client` directory and add the following environment variable:
-
-    ```plaintext
-    REACT_APP_API_URL=http://localhost:3000
-    ```
-
-3. Start the frontend development server:
+2. Start the frontend development server:
 
     ```bash
     npm start
@@ -107,10 +100,6 @@ This is a Full stack job App made with MERN Stack, MUI, Datagrid, cookie, etc. I
 1. Open your browser and navigate to `http://localhost:3000`.
 2. Sign up as a new user or log in with existing credentials.
 3. Depending on your role (admin, employer, job seeker), you will have access to different features.
-
-## Screenshots
-
-_Add screenshots of your application here._
 
 ## Contributing
 
@@ -126,6 +115,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-- **Name**: Shrinivask
+- **Name**: Shrinivassk
 - **Email**: shrinivask@example.com
 - **GitHub**: [shrinivask007](https://github.com/shrinivask007)
