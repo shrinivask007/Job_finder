@@ -31,7 +31,6 @@ This is a Full stack job App made with MERN Stack, MUI, Datagrid, cookie, etc. I
 
 - Software Architecture: MVC pattern;
 - HOC (High Order Component);
-- Dark & Light theme mode with MUI (Material UI);
 - Admin & user dashboard, pagination, Datagrid, Download in CSV, etc;
 - Open & close dashboard sidebar;
 - Admin can create jobs, create category, etc.
