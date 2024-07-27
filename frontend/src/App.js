@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import LogiIn from './pages/LogIn';
+import LogIn from './pages/LogIn';
 import NotFound from './pages/NotFound';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from './theme';
@@ -36,8 +36,8 @@ const App = () => {
                 <BrowserRouter>
                     <Routes>
                         <Route path='/' element={<Home />} />
-                        <Route path='/login' element={<LogiIn />} />
-                        <Route path='/logout' element={<LogiIn />} />
+                        <Route path='/login' element={<LogIn />} />
+                        {/* <Route path='/logout' element={<LogIn />} /> */}
                         <Route path='/register' element={<Register/>} />
                         <Route path='/user/dashboard' element={<UserRoute>< UserDashboardHOC /></UserRoute>} />
                         <Route path='/admin/jobs' element={<UserRoute>< DashJobsHOC /></UserRoute>} />

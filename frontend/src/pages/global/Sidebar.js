@@ -14,7 +14,7 @@ import logoDashboard from '../../images/user.png';
 import Person3Icon from '@mui/icons-material/Person3';
 import HomeIcon from '@mui/icons-material/Home';
 import CategoryIcon from '@mui/icons-material/Category';
-import GroupAddIcon from '@mui/icons-material/GroupAdd';
+
 
 const SidebarAdm = () => {
     const { userInfo } = useSelector(state => state.signIn);
@@ -27,7 +27,7 @@ const SidebarAdm = () => {
         navigate('/');
         setTimeout(() => {
             window.location.reload(true);
-        }, 200);
+        }, 500);
     };
 
     return (

@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import WorkIcon from '@mui/icons-material/Work';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '@emotion/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { userLogoutAction } from '../redux/actions/userAction';
@@ -26,7 +26,7 @@ function Navbar() {
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+    const Navigate = useNavigate();
     const { userInfo } = useSelector(state => state.signIn);
 
     const handleOpenNavMenu = (event) => {
@@ -43,12 +43,14 @@ function Navbar() {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+    
   // log out user
   const logOutUser = () => {
     dispatch(userLogoutAction());
-    window.location.reload(true);
+    handleCloseUserMenu();
+    Navigate('/'); // Use navigate to redirect
     setTimeout(() => {
-        Navigate('/');
+        window.location.reload(true);
     }, 500)
 }
 
